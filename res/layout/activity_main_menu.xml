@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu"
+    android:background="@color/coffee">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.458">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:padding="20dp"
+        android:text="Your coffee is waiting for you"
+            android:textStyle="bold"
+        android:textAlignment="center"
+
+        android:textColor="#070707"
+        android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/PersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:drawableRight="@drawable/ic_person"
+            android:hint="Name"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="231dp" />
+
+        <EditText
+            android:id="@+id/pswrd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Password"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="312dp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_blue"
+            android:layout_margin="25dp"
+            android:text="LogIn"
+            tools:layout_editor_absoluteX="136dp"
+            tools:layout_editor_absoluteY="396dp" />
+
+        <TextView
+            android:id="@+id/SignUP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/teal_200"
+            android:text="Don't have an account? Click here."
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="493dp" />
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
